@@ -1,5 +1,5 @@
 {% set name = "pyspnego" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -7,12 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspnego-{{ version }}.tar.gz
-  url: https://github.com/jborean93/{{ name }}/archive/v{{ version }}.zip
-  sha256: f7eabcfd8948c7b5e62a641267f65e284981688e774fbd97332474f3c4f7429f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspnego-{{ version }}.tar.gz
+  sha256: c45f95cd0877b6354b4e3e9ad49df30bc3d9f4f6730fc32e90eb2e32b1fef34d
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv  # [not win]
 
 requirements:
@@ -48,6 +47,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - dhirschf
+    - dhirschfeld
     - krisevans
     - rzillman
