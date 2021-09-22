@@ -18,12 +18,12 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python  >=3.7
     - cryptography
     - cython
     - pip
   run:
-    - python
+    - python  >=3.7
     - cryptography
     - ruamel.yaml
   run_constrained:
