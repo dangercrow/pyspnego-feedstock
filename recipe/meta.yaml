@@ -1,5 +1,5 @@
 {% set name = "pyspnego" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspnego-{{ version }}.tar.gz
-  sha256: 4f82abd01a24979cfca1980bd24948dddb07a05b283a65af10e62051ef62c7dd
+  sha256: 58d352d901baab754f63cb0da790c1f798605eb634f7f922df9bb6822d3de3c5
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - ruamel.yaml
   run_constrained:
     - python-gssapi >=1.5.0  # [not win]
+    - krb5 >=0.3.0  # [not win]
 
 test:
   imports:
