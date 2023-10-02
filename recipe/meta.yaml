@@ -25,6 +25,7 @@ requirements:
     - cryptography
     - cython
     - pip
+    - setuptools
   run:
     - python
     - cryptography
